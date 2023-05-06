@@ -1,22 +1,63 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-header {
-  display: flex;
-  align-items: center;
-  padding: 0.5em 1em;
-}
-header nav {
-  display: flex;
-  padding: 0 6em;
-}
-header nav a {
-  font-size: 1.3em;
-  cursor: pointer;
-  margin-left: 2em;
-  text-decoration: none;
-  font-weight: bold;
 
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    border: 1px solid red;
 }
+body{
+    font-family: monospace;
+}
+nav{
+    background-color: #0082e6;
+    height: 80px;
+    width: 100%;
+}
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0;
+    padding-left: 100px;
+    font-weight: bold;
+}
+label.logo span{
+    /* display: none; */
+}
+nav ul{
+    float: right;
+    margin-right: 100px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a.active,a:hover{
+    background: #1b9bff;
+}
+.cheakbtn{
+    font-size: 30px;
+    color: white;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    float: right;
+}
+#cheak{
+    display: none;
+}
+
+/* section{
+    background: url();
+} */
