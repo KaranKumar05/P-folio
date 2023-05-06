@@ -1,4 +1,13 @@
 @media (max-width: 1062px) {
+  label.logo {
+    padding-left: 50px;
+  }
+  nav ul {
+    margin-right: 50px;
+  }
+  nav ul li a {
+    font-size: 18px;
+  }
   .profile img {
     width: 250px;
   }
@@ -15,14 +24,14 @@
 }
 @media (max-width: 952px) {
   label.logo {
-    font-size: 35px;
-    padding-left: 60px;
+    font-size: 30px;
+    padding-left: 20px;
   }
   nav ul {
-    margin-right: 30px;
+    margin-right: 20px;
   }
   nav ul li a {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   /* home section qurey */
@@ -34,7 +43,7 @@
   }
   .content > h3 {
     font-size: 1.45em;
-}
+  }
   .links {
     display: flex;
     column-gap: 2em;
@@ -46,12 +55,16 @@
     width: 40px;
     height: 40px;
   }
-  .social_media>a{
+  .social_media > a {
     font-size: 1.3em;
-}
-.social_media>a:hover{
+  }
+  .social_media > a:hover {
     font-size: 1.35em;
-}
+  }
+  
+  .skill {
+    width: 350px;
+  }
 }
 @media (max-width: 858px) {
   label.logo {
@@ -67,7 +80,7 @@
     line-height: 77px;
   }
   ul {
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 27em;
     background: #2c3e50;
@@ -92,6 +105,9 @@
   }
   #cheak:checked ~ ul {
     left: 0;
+  }
+  .skill {
+    width: 300px;
   }
 }
 @media (max-width: 720px) {
@@ -122,19 +138,31 @@
     width: 35px;
     height: 35px;
   }
-  .social_media>a{
+  .social_media > a {
     font-size: 1.3em;
     padding: 8px 16px;
-
-}
-.social_media>a:hover{
+  }
+  .social_media > a:hover {
     font-size: 1.35em;
-}
+  }
+  .services h1{
+    font-size: 3em;
+  }
+  .skills h1{
+    font-size: 3em;
+  }
+  .skillset {
+    flex-direction: column;
+  }
+  .skill {
+    width: 450px;
+  }
 }
 @media (max-width: 620px) {
   .home_section {
     flex-direction: column;
-    height: 55em;
+    height: 70em;
+    justify-content: center;
   }
   .profile img {
     width: 250px;
@@ -156,14 +184,16 @@
     width: 40px;
     height: 40px;
   }
-  .social_media>a{
+  .social_media > a {
     font-size: 1.3em;
     padding: 7px 14px;
-
-}
-.social_media>a:hover{
+  }
+  .social_media > a:hover {
     font-size: 1.35em;
-}
+  }
+  .skill {
+    width: 350px;
+  }
 }
 @media (max-width: 534px) {
   label.logo {
@@ -175,6 +205,12 @@
   }
   .content > h3 {
     font-size: 1.47em;
+  }
+  .services h1{
+    font-size: 2.5em;
+  }
+  .skills h1{
+    font-size: 2.5em;
   }
 }
 @media (max-width: 460px) {
@@ -205,6 +241,9 @@
     width: 35px;
     height: 35px;
   }
+  .skill {
+    width: 280px;
+  }
 }
 @media (max-width: 370px) {
   label.logo {
@@ -222,5 +261,14 @@
   }
   .content > h3 {
     font-size: 1.2em;
+  }
+  .services h1{
+    font-size: 2em;
+  }
+  .skills h1{
+    font-size: 2em;
+  }
+  .skill {
+    width: 250px;
   }
 }
