@@ -161,8 +161,9 @@
 @media (max-width: 620px) {
   .home_section {
     flex-direction: column;
-    height: 70em;
+    height: 65em;
     justify-content: center;
+    row-gap: 2em;
   }
   .profile img {
     width: 250px;
