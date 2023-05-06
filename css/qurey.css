@@ -161,7 +161,7 @@
 @media (max-width: 620px) {
   .home_section {
     flex-direction: column;
-    height: 65em;
+    height: 60em;
     justify-content: center;
     row-gap: 2em;
   }
