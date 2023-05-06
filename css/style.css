@@ -23,8 +23,8 @@ label.logo{
     padding-left: 100px;
     font-weight: bold;
 }
-label.logo span{
-    /* display: none; */
+label.logo span a{
+    color: white;
 }
 nav ul{
     float: right;

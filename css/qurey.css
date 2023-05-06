@@ -72,6 +72,9 @@
     .cheakbtn{
         margin-right: 20px;
     }
+    ul{
+        height: 60vh;
+    }
 }
 @media(max-width:370px){
     label.logo{
