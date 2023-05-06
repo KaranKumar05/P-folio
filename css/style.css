@@ -1,63 +1,189 @@
-
-*{
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-    border: 1px solid red;
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
 }
-body{
-    font-family: monospace;
-}
-nav{
-    background-color: #0082e6;
-    height: 80px;
-    width: 100%;
-}
-label.logo{
-    color: white;
-    font-size: 35px;
-    line-height: 80px;
-    padding: 0;
-    padding-left: 100px;
-    font-weight: bold;
-}
-label.logo span a{
-    color: white;
-}
-nav ul{
-    float: right;
-    margin-right: 100px;
-}
-nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-}
-nav ul li a{
-    color: white;
-    font-size: 20px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
-}
-a.active,a:hover{
-    background: #1b9bff;
-}
-.cheakbtn{
-    font-size: 30px;
-    color: white;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-    float: right;
-}
-#cheak{
-    display: none;
+body {
+  font-family: monospace;
+  background: linear-gradient(
+    90deg,
+    rgba(3, 1, 32, 1) 0%,
+    rgba(65, 65, 159, 1) 65%,
+    rgba(0, 136, 164, 1) 100%
+  );
 }
 
-/* section{
-    background: url();
-} */
+/* Navbar */
+nav {
+  background-color: #0082e6;
+  height: 80px;
+  width: 100%;
+}
+label.logo {
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0;
+  padding-left: 100px;
+  font-weight: bold;
+  animation: slidetop 1s ease forwards;
+}
+label.logo span a {
+  color: white;
+}
+nav ul {
+  float: right;
+  margin-right: 100px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 70px;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: white;
+  font-size: 20px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  animation: slideright 1.5s ease forwards;
+
+}
+a.active,
+a:hover {
+  background: #1b9bff;
+}
+.cheakbtn {
+  font-size: 30px;
+  color: white;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+  float: right;
+}
+#cheak {
+  display: none;
+}
+
+/* Home Section  */
+.home_section {
+  display: flex;
+  width: 100%;
+  height: 38em;
+  align-items: center;
+  justify-content: space-evenly;
+  /*
+  background: linear-gradient(
+    90deg,
+    rgba(3, 1, 32, 1) 0%,
+    rgba(65, 65, 159, 1) 65%,
+    rgba(0, 136, 164, 1) 100%
+  ); */
+}
+.profile {
+  animation: float 3s ease-in-out infinite;
+}
+.profile img {
+  width: 300px;
+  border-radius: 20em;
+  border: 2px solid white;
+  animation: slideright 1.5s ease-in-out;
+}
+.content {
+  color: white;
+  animation: slideleft 1.5s ease-in-out;
+}
+.content > h1 {
+  font-size: 4em;
+  font-family: "Libre Franklin", sans-serif;
+}
+.content > h3 {
+  font-size: 1.9em;
+  font-family: "Inconsolata", monospace;
+}
+.multi-headline{
+    color: #00c8ff;
+}
+.social_media {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  align-items: center;
+  padding: 1em;
+}
+.social_media > p {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.links {
+  display: flex;
+  column-gap: 3em;
+}
+.links a {
+  color: white;
+  font-size: 2em;
+}
+.link {
+  display: inline-flex;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  outline: 2px solid white;
+  transition-property: outline-offset, outline-color, background-color;
+  transition-duration: 0.25s;
+}
+.link:hover {
+  outline-offset: 4px;
+}
+.links a:nth-child(1):hover {
+  background: linear-gradient(
+    360deg,
+    rgba(200, 232, 26, 1) 0%,
+    rgba(207, 23, 23, 1) 40%,
+    rgba(255, 0, 190, 1) 100%
+  );
+}
+.links a:nth-child(2):hover {
+  background-color: rgb(19, 19, 19);
+}
+.links a:nth-child(3):hover {
+  background-color: rgb(10, 49, 169);
+}
+.links a:nth-child(5):hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(75, 75, 255);
+}
+.link i {
+  margin: auto;
+}
+
+.link i:hover {
+  animation: shake 0.25s;
+}
+.social_media > a {
+  text-decoration: none;
+  background: none;
+  font-size: 1.5em;
+  color: white;
+  margin-top: 25px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+  /* background-color: rgba(0, 255, 213, 0.388); */
+  background-color: rgba(3, 159, 255, 0.486);
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: 0.25s;
+  border: 1px solid white;
+}
+.social_media > a:hover {
+  outline-offset: 4px;
+  /* box-shadow: 50x 5px 10px white; */
+  background-color: rgba(0, 255, 213, 0.767);
+  font-size: 1.6em;
+  box-shadow: 3px 3px 10px white;
+}

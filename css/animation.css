@@ -1,0 +1,50 @@
+/* Profile Animation */
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+
+  50% {
+    transform: translatey(-30px);
+  }
+
+  100% {
+    transform: translatey(0px);
+  }
+}
+@keyframes slideright {
+  0% {
+    transform: translateX(-600px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+/* Content Animation */
+@keyframes slideleft {
+  0% {
+    transform: translateX(600px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+/* Shake animation for links */
+@keyframes shake {
+  10% {
+    transform: rotate(15deg);
+  }
+  20% {
+    transform: rotate(-15deg);
+  }
+  30% {
+    transform: rotate(15deg);
+  }
+  40% {
+    transform: rotate(-15deg);
+  }
+}
