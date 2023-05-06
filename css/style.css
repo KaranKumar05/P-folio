@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  align-items: center;
+  padding: 0.5em 1em;
+}
+header nav {
+  display: flex;
+  padding: 0 6em;
+}
+header nav a {
+  font-size: 1.3em;
+  cursor: pointer;
+  margin-left: 2em;
+  text-decoration: none;
+  font-weight: bold;
+
+}
