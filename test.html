@@ -6,82 +6,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      .services {
-        max-width: 100%;
-        margin: 0 auto;
-        padding: 50px 0;
-        text-align: center;
-      }
-
-      .services h2 {
-        font-size: 36px;
-        font-weight: bold;
-        margin-bottom: 30px;
-      }
-
-      .services ul {
+      .contact {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        list-style: none;
-        margin: 0;
-        padding: 0;
+        column-gap: 1em;
+        align-items: center;
+        width: 70%;
+        margin: auto;
+        justify-content: space-between;
+        background-color: rgba(0, 0, 0, 0.4);
+        padding: 50px;
       }
-
-      .services li {
-        width: 100%;
-        margin: 20px;
-        
-        padding: 30px;
-        border: 1px solid #ccc;
-        border-radius: 10px;
-        text-align: left;
-        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-    }
-    
-    .services li h3 {
-          text-align: center;
-          font-size: 24px;
-          font-weight: bold;
-          margin-bottom: 20px;
+      .message{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+      }
+      .message h1{
+        color: white;
+        border-bottom: 2px solid white;
+      }
+      .message p:nth-child(2){
+        line-height: 1.5em;
+        color: white;
+      }
+      .message p:nth-child(3){
+        display: flex;
+        row-gap: 1em;
+        flex-direction: column;
+      }
+      .message p:nth-child(3) a{
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+      }
+      .form {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1em;
+      }
+      .form div:nth-child(1){
+        display: flex;
+        column-gap: 10px;
+      }
+      .form div:nth-child(2){
+        display: flex;
+        flex-direction: column;
+        row-gap: 1em;
+      }
+      .form input{
+        padding: 10px;
+        font-size: .8em;
+        background-color: white;
+        border: none;
+      }
+      .form textarea{
+        border: none;
+        padding: 20px;
+        font-size: 1.1em;
+        background-color: white;
+      }
+      .contact .btn{
+        padding: 3px;
+        font-size: 1.1em;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        background-color: rgb(2, 157, 2);
+        color: white;
+        transition: .3s;
+      }
+      .contact .btn:hover{
+        background-color: rgba(0, 239, 239, 0.861);
+      }
+      @media (max-width:952px) {
+        .contact{
+          flex-direction: column;
+          row-gap: 3em;
         }
-        
-        .services li p {
+        .message{
+          width: 80%;
           text-align: center;
-        font-size: 18px;
-        line-height: 1.5;
-        margin: 0;
+        }
+      }
+      @media (max-width:620px) {
+        .form{
+          width: 80%;
+        }
+        .form div:nth-child(1){
+        display: flex;
+        flex-direction: column;
+        row-gap: 1em;
+      }
       }
     </style>
   </head>
   <body>
-    <section class="services">
-      <h2>Services</h2>
-      <ul>
-        <li>
-          <h3>Web Design</h3>
-          <p>
-            I create custom web designs that are visually appealing,
-            user-friendly, and optimized for search engines and conversions.
-          </p>
-        </li>
-        <li>
-          <h3>Front-end Development</h3>
-          <p>
-            I build responsive and interactive websites using HTML, CSS, and
-            JavaScript, ensuring they are fast, accessible, and compatible with
-            all devices and browsers.
-          </p>
-        </li>
-        <li>
-          <h3>Website Maintenance</h3>
-          <p>
-            I provide ongoing website maintenance and support services,
-            including updates, backups, security, and bug fixing, to ensure your
-            website is always up-to-date and running smoothly.
-          </p>
-        </li>
-      </ul>
+    <section class="contact">
+      <div class="message">
+        <h1 id="contact">CONTACT</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, sunt
+          quisquam aliquam exercitationem consectetur ut?
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur,
+          voluptatum!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, vero!
+        </p>
+        <p>
+          <a href="mailto:example101@gmail.com">example101@gmail.com</a>
+          <a href="tel:+92 #">Tel: (404) 00 00 111</a>
+        </p>
+      </div>
+      <div class="form">
+        <div>
+          <input type="text" name="" id="" required placeholder="Name"/>
+          <input type="number" names="" id="" required placeholder="Number"/>
+        </div>
+        <div>
+          <input type="email" name="" id="" required placeholder="Email"/>
+          <textarea name="" id="" cols="10" rows="10" required ></textarea>
+          <button class="btn">Send</button>
+        </div>
+      </div>
     </section>
   </body>
 </html>
